@@ -2,7 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { ChakraBaseProvider, ColorModeScript, DarkMode, theme } from "@chakra-ui/react";
+import {
+  ChakraBaseProvider,
+  ColorModeScript,
+  DarkMode,
+  theme,
+} from "@chakra-ui/react";
 import ColorModeSwitcher from "./ColorModeSwitcher";
 
 const container = document.getElementById("root");
@@ -17,4 +22,4 @@ root.render(
   </>
 );
 
-export const server = `https://api.coingecko.com/api/v3`
+export const server = `https://api.coingecko.com/api/v3`;
