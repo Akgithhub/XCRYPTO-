@@ -1,36 +1,99 @@
-import { Avatar, Box, Stack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import my from '../Assets/my.jpg'
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Box
-      bgColor={"blackAlpha.900"}
-      color={"whiteAlpha.700"}
-      minH={"48"}
-      px={"16"}
-      py={["16", "8"]}
-    >
-      <Stack direction={["column", "row"]} h={"full"} alignItems={"center"}>
-        <VStack w={"full"} alignItems={["center", "flex-start"]}>
-          <Text fontWeight={"bold"}>About Us</Text>
-          <Text
-            fontSize={"sm"}
-            letterSpacing={"widest"}
-            textAlign={["center", "left"]}
-          >
-            We are the best crypto trading app in India, we provide our guidance
-            at a very cheap price.
-          </Text>
-        </VStack>
-
-        <VStack>
-          <Avatar boxSize={"28"} mt={["4", "0"]} src={my} />
-          <Text>Our Founder</Text>
-        </VStack>
-      </Stack>
-    </Box>
+    <>
+      <div className="flex gap-[25vh] justify-center w-full h-[38vh]  text-white bg-[#222725]">
+        <div className="flex flex-col mt-[7vh]">
+          <h1 className="text-[40px] font-medium">Xcrypto</h1>
+          <h2 className="text-[20px] text-slate-600 flex flex-col">
+            <span>Trade Grade:Bitcoin</span>
+            <span>& Cryptocurrency Trading Plateform</span>
+          </h2>
+        </div>
+        <div>
+          <h1 className="mt-[8vh] mb-[1vh] text-[30px] text-slate-400 font-semibold">
+            Links
+          </h1>
+          <ul className="list-none">
+            <li>
+              <Link
+                to={"/exchanges"}
+                className="hover:underline text-[18px] text-slate-200 m-2"
+              >
+                Exanchage Crypto
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/coins"}
+                className="hover:underline text-[18px] text-slate-200 m-2"
+              >
+                Trading Crypto
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={"/about"}
+                className="hover:underline text-[18px] text-slate-200 m-2"
+              >
+                About Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          {" "}
+          <h1 className="mt-[8vh] mb-[1vh] text-[30px] text-slate-400 font-semibold">
+            Contact us
+          </h1>
+          <ul className="list-none">
+            <li>
+              <Link className="hover:underline text-[18px] text-slate-200 m-2">
+                Meera Ghati
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline text-[18px] text-slate-200 m-2">
+                India, Haryana, Karnal
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline text-[18px] text-slate-200 m-2">
+                ak08118967@gmail.com
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          {" "}
+          <h1 className="mt-[8vh] mb-[1vh] text-[30px] text-slate-400 font-semibold">
+            Legal
+          </h1>
+          <ul className="list-none font-normal">
+            <li>
+              <Link className="hover:underline text-[18px] text-slate-200 m-2">
+                Terms and use
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline text-[18px] text-slate-200 m-2">
+                Privacy and Policy
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:underline text-[18px] text-slate-200 m-2">
+                Support
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex justify-center items-center bg-[#121113] w-full h-[5vh] text-white font-semibold text-[15px]">
+        <p>CopyRight 2024 Trade Grade. All Rights Reserved</p>
+      </div>
+    </>
   );
 };
 

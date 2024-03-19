@@ -36,9 +36,9 @@ const Exchanges = () => {
 
   return (
     <>
+    <div className="h-[50vh]"></div>
       <Container
         maxW={"container.xl"}
-        marginTop={"60"}
         justifyContent={"space-evenly"}
       >
         {loading ? (
