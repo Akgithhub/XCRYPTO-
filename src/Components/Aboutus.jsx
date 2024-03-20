@@ -26,7 +26,69 @@ const Aboutus = () => {
           </Link>
         </button>
       </div>
+      <div className="flex flex-row justify-center gap-[10vh] h-[90vh] w-full bg-[#CCE3DE] ">
+        {/* <div className="mt-[20vh]">
+          <img
+            src="https://img.freepik.com/free-photo/piles-coins-with-plant-front-graph_23-2148285355.jpg?t=st=1710953171~exp=1710956771~hmac=1a5a7e01f0c71e8352f52244931c52e35b941ede8ca36ef8f241e50a5c40b249&w=1380"
+            alt="Image is not availabl"
+            className="h-[60vh] rounded-2xl "
+          />
+        </div> */}
+        <div className="mt-[20vh]">
+          <h1 className="text-[40px] text-slate-900 font-semibold">
+          Welcome to CryptoTrack: 
+          </h1>
+          <h1 className="text-[40px] text-slate-900 font-semibold">
+          Your Real-Time Cryptocurrency Tracker
+          </h1>
 
+          {/* <div className=" text-slate-400 text-[20px] mt-[20px]">
+          </div> */}
+          <div className="text-slate-600 text-[20px] mt-[20px]">
+            <h2>
+              Our real-time cryptocurrency tracker provides up-to-the-minute
+              data on various cryptocurrencies, including Bitcoin, Ethereum, and
+              more.
+            </h2>
+            <h2>
+              Stay informed with live price updates, market trends, and
+              historical data, all presented in an intuitive and user-friendly
+              interface.
+            </h2>
+            <h2 className="mt-7">
+              Whether you're a seasoned investor or just curious about the
+              crypto market, our app offers valuable insights to help you make
+              informed decisions. Start tracking your favorite cryptocurrencies
+              today!
+            </h2>
+            <h2 className="mt-7">
+            Explore the world of cryptocurrencies with <strong>Xcrypto</strong> , our real-time cryptocurrency tracker. Stay updated on Bitcoin, Ethereum, and more, with live price updates, market trends, and historical data. 
+            </h2>
+          </div>
+          <button className="text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[5px] mt-[6vh] hover:bg-green-900 ">
+            <Link to={"/exchanges"} className="flex gap-3">
+              Exchange Crypto
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="4 -3 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right-left"
+              >
+                <path d="m16 3 4 4-4 4" />
+                <path d="M20 7H4" />
+                <path d="m9 21-4-4 4-4" />
+                <path d="M4 17h16" />
+              </svg>
+            </Link>
+          </button>
+        </div>
+      </div>
       <div className="flex flex-row justify-center  gap-[10vh] h-[90vh] w-full bg-[#EAF4F4]  ">
         <div className="mt-[20vh]">
           <h1 className="text-[40px] text-slate-900 font-semibold">

@@ -22,7 +22,7 @@ const Footer = () => {
                 to={"/exchanges"}
                 className="hover:underline text-[18px] text-slate-200 m-2"
               >
-                Exanchage Crypto
+                Exchange Crypto
               </Link>
             </li>
             <li>

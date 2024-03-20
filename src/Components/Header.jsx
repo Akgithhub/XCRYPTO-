@@ -47,7 +47,7 @@ function Header() {
           >
             <Link to={"/coins"}  className="text-[17px]">Trading Crypto</Link>
           </Button>
-          <Button
+          {/* <Button
             variant={"ghost"}
             cursor={"pointer"}
             color={"black"}
@@ -62,6 +62,14 @@ function Header() {
             className="hover:bg-slate-300"
           >
             <Link to={"/sign"}  className="text-[17px]">Sign Up</Link>
+          </Button> */}
+          <Button
+            variant={"ghost"}
+            cursor={"pointer"}
+            color={"black"}
+            className="hover:bg-slate-300"
+          >
+            <Link to={"/about"}  className="text-[17px]">About us</Link>
           </Button>
         </div>
       </HStack>
