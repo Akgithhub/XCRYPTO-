@@ -18,15 +18,13 @@ function Header() {
         justifyContent={"space-between"}
         // marginBottom={'5'}
       >
-        <Heading >
+        <Heading>
           {" "}
-          <h1 className="text-slate-800">
-            
-            Xcrypto</h1>
+          <h1 className="text-slate-800">Xcrypto</h1>
         </Heading>
         <div>
           {" "}
-          <Button variant={"ghost"} cursor={"pointer"} color={"black"} >
+          <Button variant={"ghost"} cursor={"pointer"} color={"black"}>
             <Link to={"/"} className="text-[17px]">
               Home
             </Link>
@@ -37,7 +35,9 @@ function Header() {
             color={"black"}
             className="hover:bg-slate-300"
           >
-            <Link to={"/exchanges"}  className="text-[17px]">Trade Crypto</Link>
+            <Link to={"/exchanges"} className="text-[17px]">
+              Trade Crypto
+            </Link>
           </Button>
           <Button
             variant={"ghost"}
@@ -45,7 +45,9 @@ function Header() {
             color={"black"}
             className="hover:bg-slate-300"
           >
-            <Link to={"/coins"}  className="text-[17px]">Crypto Rate</Link>
+            <Link to={"/coins"} className="text-[17px]">
+              Crypto Rate
+            </Link>
           </Button>
           <Button
             variant={"ghost"}
@@ -53,7 +55,9 @@ function Header() {
             color={"black"}
             className="hover:bg-slate-300"
           >
-            <Link to={"/about"}  className="text-[17px]">About us</Link>
+            <Link to={"/about"} className="text-[17px]">
+              About us
+            </Link>
           </Button>
         </div>
       </HStack>
