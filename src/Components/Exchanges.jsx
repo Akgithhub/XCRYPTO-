@@ -79,7 +79,7 @@ const Exchanges = () => {
           Stay on top of crypto. All the time, any time.
         </span>
         <span className="text-[16px] text-slate-100 ml-[20px]">
-          CoinMarketCap ranks and scores exchanges based on traffic, liquidity,
+        <strong>Xcrypto</strong> ranks and scores exchanges based on traffic, liquidity,
           trading volumes, and confidence in the legitimacy of trading volumes
           reported.
         </span>
@@ -180,6 +180,7 @@ const ExchangeCard = ({ key, name, img, rank, url, level }) => {
         borderRadius={"full"}
         transition={"all 0.3s"}
         m={"4"}
+        color={'black'}
         css={{
           "&:hover": {
             transform: "scale(1.1)",

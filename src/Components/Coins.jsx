@@ -57,7 +57,7 @@ const Coins = () => {
                   Stay on top of crypto. All the time, any time.
                 </span>
                 <span className="text-[16px] text-slate-100 ml-[20px]">
-                  CoinMarketCap ranks and scores exchanges based on traffic,
+                  <strong>Xcrypto</strong> ranks and scores exchanges based on traffic,
                   liquidity, trading volumes, and confidence in the legitimacy
                   of trading volumes reported.
                 </span>

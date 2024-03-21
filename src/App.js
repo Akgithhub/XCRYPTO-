@@ -6,8 +6,6 @@ import Exchanges from "./Components/Exchanges";
 import Coins from "./Components/Coins";
 import CoinDetails from "./Components/CoinDetails";
 import Aboutus from "./Components/Aboutus";
-import Login from "./Components/Login";
-import Signup from "./Components/Signup";
 
 function App() {
   return (
@@ -21,8 +19,6 @@ function App() {
           <Route path="/coins" element={<Coins />} />
           <Route path="/coin/:id" element={<CoinDetails />} />
           <Route path="/about" element={<Aboutus />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/sign" element={<Signup />} />
         </Routes>
       </Router>
     </>

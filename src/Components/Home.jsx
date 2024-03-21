@@ -28,7 +28,7 @@ const Home = () => {
         <div>
           <button className="text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[60px] mt-[6vh] hover:bg-green-900 ">
             <Link to={"/exchanges"} className="flex gap-3">
-              Exchange Crypto
+              Trade Crypto 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

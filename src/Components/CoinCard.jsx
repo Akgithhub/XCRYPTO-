@@ -4,7 +4,7 @@ import { Image, VStack, Heading, Text } from "@chakra-ui/react";
 
 const CoinCard = ({ id, name, img, symbol, price, currencySymbol = "₹" }) => {
   return (
-    <Link to={`/coin/${id}`} className="bg-slate-100 rounded-full">
+    <Link to={`/coin/${id}`} className="bg-slate-100 rounded-full text-black">
       <VStack
         w={"52"}
         shadow={"lg"}

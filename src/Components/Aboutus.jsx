@@ -27,19 +27,12 @@ const Aboutus = () => {
         </button>
       </div>
       <div className="flex flex-row justify-center gap-[10vh] h-[90vh] w-full bg-[#CCE3DE] ">
-        {/* <div className="mt-[20vh]">
-          <img
-            src="https://img.freepik.com/free-photo/piles-coins-with-plant-front-graph_23-2148285355.jpg?t=st=1710953171~exp=1710956771~hmac=1a5a7e01f0c71e8352f52244931c52e35b941ede8ca36ef8f241e50a5c40b249&w=1380"
-            alt="Image is not availabl"
-            className="h-[60vh] rounded-2xl "
-          />
-        </div> */}
         <div className="mt-[20vh]">
           <h1 className="text-[40px] text-slate-900 font-semibold">
-          Welcome to CryptoTrack: 
+            Welcome to CryptoTrack:
           </h1>
           <h1 className="text-[40px] text-slate-900 font-semibold">
-          Your Real-Time Cryptocurrency Tracker
+            Your Real-Time Cryptocurrency Tracker
           </h1>
 
           {/* <div className=" text-slate-400 text-[20px] mt-[20px]">
@@ -62,12 +55,15 @@ const Aboutus = () => {
               today!
             </h2>
             <h2 className="mt-7">
-            Explore the world of cryptocurrencies with <strong>Xcrypto</strong> , our real-time cryptocurrency tracker. Stay updated on Bitcoin, Ethereum, and more, with live price updates, market trends, and historical data. 
+              Explore the world of cryptocurrencies with{" "}
+              <strong>Xcrypto</strong> , our real-time cryptocurrency tracker.
+              Stay updated on Bitcoin, Ethereum, and more, with live price
+              updates, market trends, and historical data.
             </h2>
           </div>
           <button className="text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[5px] mt-[6vh] hover:bg-green-900 ">
             <Link to={"/exchanges"} className="flex gap-3">
-              Exchange Crypto
+              Trade Crypto
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -109,7 +105,7 @@ const Aboutus = () => {
           </div>
           <button className="text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[4px] mt-[4vh] hover:bg-green-900 ">
             <Link to={"/coins"} className="flex gap-3">
-              Trading Crypto
+              Crypto Rate
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -165,7 +161,7 @@ const Aboutus = () => {
           </div>
           <button className="text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[5px] mt-[6vh] hover:bg-green-900 ">
             <Link to={"/exchanges"} className="flex gap-3">
-              Exchange Crypto
+              Trade Crypto
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

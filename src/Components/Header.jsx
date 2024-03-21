@@ -37,7 +37,7 @@ function Header() {
             color={"black"}
             className="hover:bg-slate-300"
           >
-            <Link to={"/exchanges"}  className="text-[17px]">Exchange Crypto</Link>
+            <Link to={"/exchanges"}  className="text-[17px]">Trade Crypto</Link>
           </Button>
           <Button
             variant={"ghost"}
@@ -45,24 +45,8 @@ function Header() {
             color={"black"}
             className="hover:bg-slate-300"
           >
-            <Link to={"/coins"}  className="text-[17px]">Trading Crypto</Link>
+            <Link to={"/coins"}  className="text-[17px]">Crypto Rate</Link>
           </Button>
-          {/* <Button
-            variant={"ghost"}
-            cursor={"pointer"}
-            color={"black"}
-            className="hover:bg-slate-300"
-          >
-            <Link to={"/login"}  className="text-[17px]">Login</Link>
-          </Button>
-          <Button
-            variant={"ghost"}
-            cursor={"pointer"}
-            color={"black"}
-            className="hover:bg-slate-300"
-          >
-            <Link to={"/sign"}  className="text-[17px]">Sign Up</Link>
-          </Button> */}
           <Button
             variant={"ghost"}
             cursor={"pointer"}

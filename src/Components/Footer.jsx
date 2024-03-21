@@ -22,7 +22,7 @@ const Footer = () => {
                 to={"/exchanges"}
                 className="hover:underline text-[18px] text-slate-200 m-2"
               >
-                Exchange Crypto
+                Trade Crypto 
               </Link>
             </li>
             <li>
@@ -30,7 +30,7 @@ const Footer = () => {
                 to={"/coins"}
                 className="hover:underline text-[18px] text-slate-200 m-2"
               >
-                Trading Crypto
+                 Crypto Rate
               </Link>
             </li>
             <li>
