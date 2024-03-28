@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="flex gap-[25vh] justify-center w-full h-[38vh]  text-white bg-[#222725]">
-        <div className="flex flex-col mt-[7vh]">
+      <div className="footer flex gap-[25vh] justify-center w-full h-[38vh]  text-white bg-[#222725]">
+        <div className="footer-first flex flex-col mt-[7vh]">
           <h1 className="text-[40px] font-medium">Xcrypto</h1>
           <h2 className="text-[20px] text-slate-600 flex flex-col">
             <span>Trade Grade:Bitcoin</span>
             <span>& Cryptocurrency Trading Plateform</span>
           </h2>
         </div>
-        <div>
+        <div className="footer-link">
           <h1 className="mt-[8vh] mb-[1vh] text-[30px] text-slate-400 font-semibold">
             Links
           </h1>
@@ -66,9 +66,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="footer-legal">
           {" "}
-          <h1 className="mt-[8vh] mb-[1vh] text-[30px] text-slate-400 font-semibold">
+          <h1 className=" mt-[8vh] mb-[1vh] text-[30px] text-slate-400 font-semibold">
             Legal
           </h1>
           <ul className="list-none font-normal">

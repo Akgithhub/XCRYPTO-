@@ -22,6 +22,7 @@ import crypto from "../Assets/crypto.png";
 import fox from "../Assets/fox.png";
 import green from "../Assets/green.svg";
 import red from "../Assets/red.svg";
+import { Carousel } from "react-responsive-carousel";
 
 const Exchanges = () => {
   const [exchanges, setexchanges] = useState([]);
@@ -79,7 +80,7 @@ const Exchanges = () => {
           Stay on top of crypto. All the time, any time.
         </span>
         <span className="text-[16px] text-slate-100 ml-[20px]">
-        <strong>Xcrypto</strong> ranks and scores exchanges based on traffic, liquidity,
+          <strong>Xcrypto</strong> ranks and scores exchanges based on traffic, liquidity,
           trading volumes, and confidence in the legitimacy of trading volumes
           reported.
         </span>
@@ -118,26 +119,36 @@ const Exchanges = () => {
         </Container>
       </div>
       <div className="bg-[#899878] overflow-hidden">
-        <HStack w={"full"} overflowX={"auto"} p={"8"}>
-          {btns.map((item, index) => (
-            <Button
-              key={index}
-              bg={"white"}
-              color={"black"}
-              onClick={() => changepage(index + 1)}
-              borderRadius={"100%"}
-              boxShadow={"4px 4px 5px #454d3d "}
-              transition={"all 0.3s"}
-              css={{
-                "&:hover": {
-                  transform: "scale(1.3)",
-                },
-              }}
-            >
-              {index + 1}
-            </Button>
-          ))}
-        </HStack>
+        <Carousel
+
+          showArrows={true}
+          showIndicators={false}
+          showStatus={false}
+          showThumbs={false}
+        >
+          <HStack w={"full"} overflowX={"auto"} p={"8"}>
+
+            {btns.map((item, index) => (
+              <Button
+                key={index}
+                bg={"white"}
+                color={"black"}
+                onClick={() => changepage(index + 1)}
+                borderRadius={"100%"}
+                boxShadow={"4px 4px 5px #454d3d "}
+                transition={"all 0.3s"}
+                css={{
+                  "&:hover": {
+                    transform: "scale(1.3)",
+                  },
+                }}
+              >
+                {index + 1}
+              </Button>
+            ))}  
+
+          </HStack>
+        </Carousel>
       </div>
       <div className="h-auto bg-[#454d3d] flex flex-col justify-center">
         <h1 className="text-[30px] font-semibold text-slate-900 m-3">
@@ -201,13 +212,13 @@ const ExchangeCard = ({ key, name, img, rank, url, level }) => {
         <Text noOfLines={1}>{name}</Text>
         <Stat>
           <StatHelpText>
-            <StatArrow  type={Math.ceil(level) > 200 ? "increase" : "decrease"} />
+            <StatArrow type={Math.ceil(level) > 200 ? "increase" : "decrease"} />
             {level}%
           </StatHelpText>
         </Stat>
         <div>
           {
-            level>200? <img src={green} alt="" />: <img src={red} alt="" />
+            level > 200 ? <img src={green} alt="" /> : <img src={red} alt="" />
           }
         </div>
       </VStack>

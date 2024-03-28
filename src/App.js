@@ -7,6 +7,7 @@ import Coins from "./Components/Coins";
 import CoinDetails from "./Components/CoinDetails";
 import Aboutus from "./Components/Aboutus";
 
+
 function App() {
   return (
     <>

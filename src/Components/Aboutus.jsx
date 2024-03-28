@@ -26,7 +26,7 @@ const Aboutus = () => {
           </Link>
         </button>
       </div>
-      <div className="flex flex-row justify-center gap-[10vh] h-[90vh] w-full bg-[#CCE3DE] ">
+      <div className="about-1 flex flex-row justify-center gap-[10vh] h-[90vh] w-full bg-[#CCE3DE] ">
         <div className="mt-[20vh]">
           <h1 className="text-[40px] text-slate-900 font-semibold">
             Welcome to CryptoTrack:
@@ -85,7 +85,7 @@ const Aboutus = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-row justify-center  gap-[10vh] h-[90vh] w-full bg-[#EAF4F4]  ">
+      <div className="about-2 flex flex-row justify-center  gap-[10vh] h-[90vh] w-full bg-[#EAF4F4]  ">
         <div className="mt-[20vh]">
           <h1 className="text-[40px] text-slate-900 font-semibold">
             Safest and Fastest Trading
@@ -124,7 +124,7 @@ const Aboutus = () => {
             </Link>
           </button>
         </div>
-        <div className="mt-[20vh]">
+        <div className="about-2img mt-[20vh]">
           <img
             src="https://img.freepik.com/free-vector/marketing-strategy-icon-with-magnifier-growing-bars-computer-monitor-isometric_1284-63093.jpg?t=st=1710782313~exp=1710785913~hmac=d5d0c04de3370220942ebb92cbf589c43f1a84ff473ce401917d91ec651ea47c&w=826"
             alt="Image is not available"
@@ -132,8 +132,8 @@ const Aboutus = () => {
           />
         </div>
       </div>
-      <div className="flex flex-row justify-center  gap-[10vh] h-[90vh] w-full bg-[#CCE3DE] ">
-        <div className="mt-[20vh]">
+      <div className="about-3 flex flex-row justify-center  gap-[10vh] h-[90vh] w-full bg-[#CCE3DE] ">
+        <div className="about-3img mt-[20vh]">
           <img
             src="https://img.freepik.com/free-vector/valuable-cryptocurrency-dogecoin-illustration_23-2149200127.jpg?w=826"
             alt="Image is not availabl"

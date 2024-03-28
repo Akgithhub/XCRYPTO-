@@ -9,24 +9,24 @@ const Home = () => {
   return (
     <>
       {" "}
-      <div
-        className="bg-cover bg-center h-screen w-full "
+      <div 
+        className="home bg-cover bg-center h-screen w-[100%] "
         style={{
           backgroundImage:
             "url('https://img.freepik.com/free-photo/copy-space-bitcoin-different-colors_23-2148285316.jpg?size=626&ext=jpg&ga=GA1.1.1462547280.1708701382&semt=ais')",
         }}
       >
-        <div className="text-green-800 text-[90px] font-bold">
+        <div className="home-heading text-green-800 text-[90px] font-bold">
           <h1 className="ml-[60px] ">Limitless Crypto</h1>
           <h1 className="ml-[60px]">Exchanges.</h1>
         </div>
-        <div className="flex flex-col ml-[60px] text-[25px] mt-8 text-slate-500">
+        <div className="home-text flex flex-col ml-[60px] text-[25px] mt-8 text-slate-500">
           <span>Fast, Simple, Non-custodial Exchange Service</span>
           <span>With 10+ Crytocurriences</span>
           <span>We pay your network fees.</span>
         </div>
         <div>
-          <button className="text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[60px] mt-[6vh] hover:bg-green-900 ">
+          <button className="home-btn text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[60px] mt-[6vh] hover:bg-green-900 ">
             <Link to={"/exchanges"} className="flex gap-3">
               Trade Crypto
               <svg
@@ -50,7 +50,7 @@ const Home = () => {
           </button>
         </div>
         <div>
-          <button className="text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[60px] mt-[2vh] hover:bg-green-900 ">
+          <button className="home-btn text-[20px] text-white bg-green-700 p-3 font-[30px] rounded-xl ml-[60px] mt-[2vh] hover:bg-green-900 mb-10 ">
             <Link to={"/about"} className="flex gap-3">
               About us
               <svg
