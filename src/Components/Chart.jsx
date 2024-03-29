@@ -44,12 +44,19 @@ const Chart = ({ arr = [], currency, days }) => {
   };
 
   return (
-    <Line
+    <>
+    <div className="chart" style={{
+      width:'100%',
+      height:'100%'
+    }}>
+    <Line 
       options={{
         responsive: true,
       }}
       data={data}
     />
+    </div>
+    </>
   );
 };
 

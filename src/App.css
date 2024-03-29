@@ -79,6 +79,64 @@
     width: 57vw;
     margin-top: 10px;
   }
+  .exchange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  .exchange-text{
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .exchange-last{
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .coins-text{
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .detail{
+    width: 100%;
+  }
+  .detail-dis{
+    height: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  .detail-page{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .detail-head{
+    padding-top: 40px;
+  }
+  .detail-img{
+    margin-top: 40px;
+  }
+  .detail-text{
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+
 }
 /* @media only screen and (max-width: 350px) {
     .navbar{

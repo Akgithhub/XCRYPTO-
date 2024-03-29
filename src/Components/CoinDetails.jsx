@@ -125,20 +125,20 @@ const CoinDetails = () => {
           </svg>
         </Link>
       </button>
-      <div className="bg-[#899878]">
+      <div className="detail bg-[#899878]">
         <Container maxW={"container.xl"} bgColor={"#899878"}>
           {loading ? (
             <Loader />
           ) : (
             <>
               <div className="h-[20vh] flex justify-center items-center gap-8">
-                <img src={coin.image.large} alt="" className="h-[10vh]" />
-                <span className="text-[40px] font-bold text-green-800 ">
+                <img src={coin.image.large} alt="" className="detail-img h-[10vh]" />
+                <span className="detail-head text-[40px] font-bold text-green-800 ">
                   {coin.name}
                 </span>
               </div>
               <div>
-                <p className="text-slate-200 text-[17px]">
+                <p className="detail-text text-slate-200 text-[17px]">
                   {coin.description.bg}
                 </p>
               </div>
@@ -150,7 +150,7 @@ const CoinDetails = () => {
                 </HStack>
               </RadioGroup>
 
-              <VStack spacing={"4"} p="16" alignItems={"flex-start"}>
+              <VStack spacing={"4"} p="16" alignItems={"flex-start"}className="" >
                 <Text
                   fontSize={"medium"}
                   alignSelf="center"
@@ -224,9 +224,10 @@ const CoinDetails = () => {
                     arr={chartArray}
                     currency={currencySymbol}
                     days={days}
+                    
                   />
                 </Box>
-                <HStack p="4" overflowX={"auto"}>
+                <HStack p="4" overflowX={"auto"} className="detail-page">
                   {btns.map((i) => (
                     <Button
                       disabled={days === i}
@@ -252,7 +253,7 @@ const CoinDetails = () => {
         </Container>
       </div>
       <div
-        className="flex flex-col justify-center items-center
+        className="detail-dis flex flex-col justify-center items-center w-full
       "
       >
         <span className="text-[26px] font-semibold text-slate-800 ">

@@ -57,7 +57,7 @@ const Exchanges = () => {
 
   return (
     <>
-      <div className="h-[15vh] flex justify-center gap-[20vh] bg-[#E4E6C3]">
+      <div className="exchange h-[15vh] flex justify-center gap-[20vh] bg-[#E4E6C3]">
         <div className="flex flex-row text-[40px] font-bold gap-[10px] mt-[25px]  ">
           <img src={binance} alt="" className="h-[70px]" />
           <span className="mt-[13px]">Binance</span>
@@ -75,7 +75,7 @@ const Exchanges = () => {
           <span className="mt-[13px]">Ethereum</span>
         </div>
       </div>
-      <div className="bg-[#b6b88f] text-[23px] font-medium text-slate-700 flex flex-col items-center justify-center t h-[26vh] ">
+      <div className="exchange-text bg-[#b6b88f] text-[23px] font-medium text-slate-700 flex flex-col items-center justify-center t h-[26vh] ">
         <span className="mb-4 ml-[20px]">
           Stay on top of crypto. All the time, any time.
         </span>
@@ -118,39 +118,32 @@ const Exchanges = () => {
           )}
         </Container>
       </div>
-      <div className="bg-[#899878] overflow-hidden">
-        <Carousel
+      <div className="page-btn bg-[#899878] overflow-hidden">
+        <HStack w={"full"} overflowX={"auto"} p={"8"}>
 
-          showArrows={true}
-          showIndicators={false}
-          showStatus={false}
-          showThumbs={false}
-        >
-          <HStack w={"full"} overflowX={"auto"} p={"8"}>
+          {btns.map((item, index) => (
+            <Button
+              key={index}
+              bg={"white"}
+              color={"black"}
+              onClick={() => changepage(index + 1)}
+              borderRadius={"100%"}
+              boxShadow={"4px 4px 5px #454d3d "}
+              transition={"all 0.3s"}
+              css={{
+                "&:hover": {
+                  transform: "scale(1.3)",
+                },
+              }}
+            >
+              {index + 1}
+            </Button>
+          ))}
 
-            {btns.map((item, index) => (
-              <Button
-                key={index}
-                bg={"white"}
-                color={"black"}
-                onClick={() => changepage(index + 1)}
-                borderRadius={"100%"}
-                boxShadow={"4px 4px 5px #454d3d "}
-                transition={"all 0.3s"}
-                css={{
-                  "&:hover": {
-                    transform: "scale(1.3)",
-                  },
-                }}
-              >
-                {index + 1}
-              </Button>
-            ))}  
+        </HStack>
 
-          </HStack>
-        </Carousel>
       </div>
-      <div className="h-auto bg-[#454d3d] flex flex-col justify-center">
+      <div className="exchange-last h-auto bg-[#454d3d] flex flex-col justify-center">
         <h1 className="text-[30px] font-semibold text-slate-900 m-3">
           Top Tokens by Market Capitalization
         </h1>

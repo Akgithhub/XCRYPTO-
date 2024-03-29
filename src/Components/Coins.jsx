@@ -52,7 +52,7 @@ const Coins = () => {
             <Loader></Loader>
           ) : (
             <>
-              <div className="bg-[#c2ceb5] text-[23px] font-medium text-slate-700 flex flex-col items-center justify-center t h-[26vh] ">
+              <div className="coins-text bg-[#c2ceb5] text-[23px] font-medium text-slate-700 flex flex-col items-center justify-center t h-[26vh] ">
                 <span className="mb-4 ml-[20px]">
                   Stay on top of crypto. All the time, any time.
                 </span>
@@ -116,7 +116,7 @@ const Coins = () => {
           )}
         </Container>
       </div>
-      <div className="h-auto bg-[#454d3d] flex flex-col justify-center">
+      <div className="coins-text h-auto bg-[#454d3d] flex flex-col justify-center">
         <h1 className="text-[30px] font-semibold text-slate-900 m-3">
           Top Tokens by Market Capitalization
         </h1>
